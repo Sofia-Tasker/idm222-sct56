@@ -1,0 +1,143 @@
+body {
+    background-color: #dfdfdf;
+    font-family: "Mabry light",sans-serif;
+    font-weight: 300;
+}
+
+h1{
+    font-size: calc(27.71831px + 4.22535vw);
+    line-height: 130%;
+    letter-spacing: -.08vw;
+    font-weight: 200;
+}
+
+h3, p {
+    font-family: "Basis Grotesque",sans-serif;
+}
+
+h3{
+    font-weight: 100;
+}
+
+h4{
+    padding-bottom: 0;
+    font-size: 1.4rem;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header__nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.header__nav a {
+    text-decoration: none;
+    padding: 16px 14px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.header__nav a:hover, .header__nav a.active {
+    color: #6b6b6b;
+}
+
+.hero {
+    padding: 10% 50% 3% 3%;
+    margin: 0;
+    border-bottom: 2px solid #000;
+}
+
+.subhero {
+    padding: 3% 7% 3% 3%;
+    margin: 0;
+}
+
+.content__qualifications, .content__work {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 90%;
+    align-items: flex-start;
+    align-content: center;
+    padding: 3%;
+    font-size: calc(18.61972px + .70423vw);
+}
+
+.content__qualifications h2, .content__work h2{
+    font-weight: 100;
+}
+
+.content__qualificationsNav, .content__workNav {
+    list-style: none; 
+    font-family: "Mabry medium",sans-serif;
+    font-weight: 500;
+    letter-spacing: -.07rem;
+    line-height: 160%;
+    cursor: pointer; 
+    max-width: 50%;
+}
+
+.content__qualificationsNav li, .content__workNav li{
+    border-bottom: 2px solid #000;
+
+}
+.active, .accordion:hover {
+    color: #6b6b6b;
+}  
+
+.panel {
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.content__qualificationsNav p, .content__workNav p{
+    font-size: calc(16.64789px + .28169vw);
+    letter-spacing: .01rem;
+}
+
+.content__qualificationsNav ul li, .content__workNav ul li{
+    font-size: calc(12.64789px + .28169vw);
+    letter-spacing: .01rem;
+    border-bottom: none;
+}
+
+.footer__nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.footer__nav a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.17em;
+    cursor: pointer;
+}
+
+.footer__nav a:hover, .footer__nav a.active {
+    color: #6b6b6b;
+}
+
+.footer__email{
+    font-size: calc(21.23944px + 1.40845vw);
+    letter-spacing: -.02vw;
+    font-family: "Mabry light",sans-serif;
+    font-weight: 300;
+    padding: 8px 0 0 3%;
+    max-width: 36%;
+    text-decoration: underline 2px solid #000;
+}
+
+.footer__close{
+    padding: 0 0 0 3%;
+
+}
