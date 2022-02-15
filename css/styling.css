@@ -2,6 +2,8 @@ body {
     background-color: #dfdfdf;
     font-family: "Mabry light",sans-serif;
     font-weight: 300;
+    background-image: url(../images/header__wave.svg);
+    background-repeat: no-repeat;
 }
 
 h1{
@@ -95,7 +97,7 @@ h4{
 .panel {
     display: none;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    transition: 0.2s ease-out;
 }
 
 .content__qualificationsNav p, .content__workNav p{
@@ -107,6 +109,15 @@ h4{
     font-size: calc(12.64789px + .28169vw);
     letter-spacing: .01rem;
     border-bottom: none;
+}
+
+.content {
+    border-bottom: 2px solid #32CD32;
+}
+
+footer {
+    background-image: url(../images/footer__wave.svg);
+    background-repeat: no-repeat;
 }
 
 .footer__nav{
@@ -140,5 +151,5 @@ h4{
 
 .footer__close{
     padding: 0 0 0 3%;
-
+    
 }
