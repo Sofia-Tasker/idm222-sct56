@@ -135,6 +135,7 @@ h4{
     padding: 8px 0 0 3%;
     max-width: 36%;
     text-decoration: underline 2px solid #000;
+    cursor: pointer;
 }
 
 .footer__close{
