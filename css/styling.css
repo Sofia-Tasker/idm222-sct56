@@ -226,3 +226,39 @@ footer {
         'jo jo'
         'architecture tiffany';
 }
+
+/* Dev Page */
+
+.content__developement-classConnect{
+    grid-area: class;
+}
+
+.content__developement-emoney{
+    grid-area: emoney;
+}
+
+.content__developement-colab{
+    grid-area: colab;
+}
+
+.content__developement-lynx{
+    grid-area: lynx;
+}
+
+.content__developement-dataVis{
+    grid-area: data;
+}
+
+.content__developement{
+    max-width: 90%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        'class emoney'
+        'class colab'
+        'lynx data'
+        'lynx data';
+}
