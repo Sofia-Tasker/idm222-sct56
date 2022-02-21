@@ -262,3 +262,27 @@ footer {
         'lynx data'
         'lynx data';
 }
+
+/* Design Page */
+
+.content__design-barnes{
+    grid-area: barnes;
+}
+.content__design-syzo{
+    grid-area: syzo;
+}
+.content__design-guardian{
+    grid-area: guardian;
+}
+
+.content__design{
+    max-width: 90%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        'barnes syzo'
+        'guardian syzo';
+}
