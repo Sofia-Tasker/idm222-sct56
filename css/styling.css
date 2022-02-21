@@ -211,29 +211,6 @@ footer {
     font-size: 10%;
     
 }
-/* More Page */
-
-.content__more-jo{
-    grid-area: jo;
-}
-.content__more-architecture{
-    grid-area: architecture;
-}
-.content__more-tiffany{
-    grid-area: tiffany;
-}
-
-.content__more{
-    max-width: 90%;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-        'jo jo'
-        'architecture tiffany';
-}
 
 /* Dev Page */
 
@@ -269,6 +246,7 @@ footer {
         'class colab'
         'lynx data'
         'lynx data';
+    background-color: #ffffff;
 }
 
 /* Design Page */
@@ -293,4 +271,30 @@ footer {
     grid-template-areas:
         'barnes syzo'
         'guardian syzo';
+    background-color: #ffffff;
+}
+
+/* More Page */
+
+.content__more-jo{
+    grid-area: jo;
+}
+.content__more-architecture{
+    grid-area: architecture;
+}
+.content__more-tiffany{
+    grid-area: tiffany;
+}
+
+.content__more{
+    max-width: 90%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        'jo jo'
+        'architecture tiffany';
+    background-color: #ffffff;
 }
