@@ -24,6 +24,20 @@
                 <li><a href="./design.html">design</a></li>
                 <li><a href="./more.html" >more</a></li>
             </ul>
+            <h3 class="header__mobile-open">
+                <a href="javascript:void(0);" onclick="mobileMenuOpen()">menu</a>
+            </h3>
+            <div class="header__mobile-menu">
+                <h3 class="header__mobile-close">
+                    <a href="javascript:void(0);" onclick="mobileMenuClose()">close</a>
+                </h3>
+                <ul class="header__mobile-nav">
+                    <li><a href="./index.html" class="active">home</a></li>
+                    <li><a href="./developement.html" >development</a></li>
+                    <li><a href="./design.html">design</a></li>
+                    <li><a href="./more.html" >more</a></li>
+                </ul>
+            </div>
         </div>
     </header>
     <div class="hero">
@@ -202,6 +216,33 @@
         </div>
     </footer>
     <script>
+        // Mobile Menu
+        var buttonOpen = document.getElementsByClassName('header__mobile-open');
+        var buttonClose = document.getElementsByClassName('header__mobile-close');
+        var mobileNav = document.getElementsByClassName('header__mobile-menu');
+
+        function mobileMenuOpen(){
+            for (var i=0;i < mobileNav.length; i++){
+                mobileNav[i].style.display = 'block';
+            }
+            for (var i=0;i < buttonOpen.length; i++){
+                buttonOpen[i].style.display = 'none';
+            }
+        }
+
+        function mobileMenuClose(){
+            for (var i=0;i < mobileNav.length; i++){
+                mobileNav[i].style.display = 'none';
+            }
+            for (var i=0;i < buttonClose.length; i++){
+                buttonClose[i].style.display = 'none';
+            }
+            for (var i=0;i < buttonOpen.length; i++){
+                buttonOpen[i].style.display = 'block';
+            }
+        }
+
+        // Accordian panels
         var acc = document.getElementsByClassName("accordion");
         var i;
 

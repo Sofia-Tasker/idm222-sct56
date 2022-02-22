@@ -21,10 +21,6 @@ img{
     max-width: 100%;
 }
 
-/* img:hover{
-    filter: brightness(80%);
-}   */
-
 h1{
     font-size: calc(28px + 4vw);
     line-height: 130%;
@@ -71,11 +67,32 @@ header {
     cursor: pointer;
 }
 
+.header__mobile-open{
+    display: none;
+}
+
+.header__mobile-close{
+    display: block;
+}
+
+.header__mobile-menu{
+    display: none;
+}
+
 .header__nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     list-style: none;
+}
+
+@media screen and (max-width: 768px){
+    .header__mobile-open{
+        display: block;
+    }
+    .header__nav{
+        display: none;
+    }
 }
 
 .header__nav a {
@@ -146,8 +163,6 @@ header {
     display: none;
     transition: 0.2s ease-out;
 }
-
-
 
 .content__qualificationsNav p, .content__workNav p{
     font-size: calc(16px + .3vw);
@@ -257,9 +272,9 @@ footer {
     grid-template-rows: auto;
     grid-template-areas:
         'class emoney'
-        'class colab'
+        'class data'
         'lynx data'
-        'lynx data';
+        'lynx colab';
     background-color: #ffffff;
 }
 
