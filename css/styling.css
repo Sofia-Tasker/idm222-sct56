@@ -144,7 +144,6 @@ header {
 
 .panel {
     display: none;
-    overflow: hidden;
     transition: 0.2s ease-out;
 }
 
