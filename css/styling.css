@@ -21,6 +21,10 @@ img{
     max-width: 100%;
 }
 
+/* img:hover{
+    filter: brightness(80%);
+}   */
+
 h1{
     font-size: calc(28px + 4vw);
     line-height: 130%;
@@ -222,6 +226,7 @@ footer {
     grid-area: emoney;
 }
 
+
 .content__developement-colab{
     grid-area: colab;
 }
@@ -234,8 +239,13 @@ footer {
     grid-area: data;
 }
 
+.content__developement div:hover {
+    opacity: .7;
+}
+
 .content__developement{
-    max-width: 90%;
+    width: 90%;
+    margin: auto;
     display: grid;
     justify-items: center;
     align-items: center;
@@ -261,8 +271,13 @@ footer {
     grid-area: guardian;
 }
 
+.content__design div:hover {
+    opacity: .7;
+}
+
 .content__design{
-    max-width: 90%;
+    width: 90%;
+    margin: auto;
     display: grid;
     justify-items: center;
     align-items: center;
@@ -286,8 +301,13 @@ footer {
     grid-area: tiffany;
 }
 
+.content__more div:hover {
+    opacity: .7;
+}
+
 .content__more{
-    max-width: 90%;
+    width: 90%;
+    margin: auto;
     display: grid;
     justify-items: center;
     align-items: center;
