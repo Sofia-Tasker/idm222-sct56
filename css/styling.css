@@ -67,6 +67,10 @@ header {
     padding: 2% 3%;
 }
 
+.header__logo{
+    cursor: pointer;
+}
+
 .header__nav{
     display: flex;
     flex-direction: row;
@@ -241,6 +245,7 @@ footer {
 
 .content__developement div:hover {
     opacity: .7;
+    cursor: pointer;
 }
 
 .content__developement{
@@ -273,6 +278,7 @@ footer {
 
 .content__design div:hover {
     opacity: .7;
+    cursor: pointer;
 }
 
 .content__design{
@@ -303,6 +309,7 @@ footer {
 
 .content__more div:hover {
     opacity: .7;
+    cursor: pointer;
 }
 
 .content__more{
