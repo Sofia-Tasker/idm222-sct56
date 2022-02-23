@@ -263,11 +263,13 @@ footer {
 }
 
 .content__developement{
-    width: 90%;
+    width: 98%;
     margin: auto;
     display: grid;
     justify-items: center;
     align-items: center;
+    align-self: center;
+    justify-content: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
