@@ -10,6 +10,7 @@ body {
     font-family: "Mabry light",sans-serif;
     font-weight: 300;
     background-repeat: no-repeat;
+    min-height: 90vh;
 }
 
 a:link, a:visited{
