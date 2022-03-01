@@ -170,12 +170,12 @@ header {
 }
 
 .content__qualificationsNav p, .content__workNav p{
-    font-size: calc(3px + 1.5vw);
+    font-size: 1rem;
     letter-spacing: .01rem;
 }
 
 .content__qualificationsNav ul li, .content__workNav ul li{
-    font-size: calc(2.5px + 1.5vw);
+    font-size: .8rem;
     letter-spacing: .01rem;
     border-bottom: none;
 }
@@ -347,6 +347,64 @@ footer {
         'jo jo'
         'architecture tiffany';
     background-color: #ffffff;
+}
+
+/* Donate Page */
+
+#content__donate, #hero__donate{
+    border-bottom: 2px solid #ffd700;
+}
+
+.content__donation, .content__support {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 90%;
+    align-items: flex-start;
+    align-content: center;
+    padding: 3%;
+    font-size: calc(19px + .7vw);
+}
+
+.content__donation h2, .content__support h2{
+    font-weight: 100;
+}
+
+.content__donationNav, .content__supportNav {
+    list-style: none; 
+    font-family: "Mabry medium",sans-serif;
+    font-weight: 500;
+    letter-spacing: -.07rem;
+    line-height: 160%;
+    cursor: pointer; 
+    max-width: 50%;
+}
+
+.content__donationNav li, .content__supportNav li{
+    border-bottom: 2px solid #ffd700;
+}
+
+
+.active, .accordion:hover {
+    color: #6b6b6b;
+}  
+
+.panel {
+    display: none;
+    transition: 0.2s ease-out;
+}
+
+.content__donationNav p, .content__supportNav p{
+    font-size: 1rem;
+    letter-spacing: .01rem;
+}
+
+.content__donationNav p a, .content__supportNav p a{
+    font-size: 1rem;
+    letter-spacing: .01rem;
+    color: #0057b7;
+    padding-left: 1rem;
+    text-decoration: underline;
 }
 
 /* Subpage - Class Connect */
