@@ -217,29 +217,23 @@
     </footer>
     <script>
         // Mobile Menu
-        var buttonOpen = document.getElementsByClassName('header__mobile-open');
-        var buttonClose = document.getElementsByClassName('header__mobile-close');
-        var mobileNav = document.getElementsByClassName('header__mobile-menu');
+        var buttonOpen = document.getElementsByClassName('header__mobile-open')[0];
+        var buttonClose = document.getElementsByClassName('header__mobile-close')[0];
+        var mobileNav = document.getElementsByClassName('header__mobile-menu')[0];
 
-        function mobileMenuOpen(){
-            for (var i=0;i < mobileNav.length; i++){
-                mobileNav[i].style.display = 'block';
-            }
-            for (var i=0;i < buttonOpen.length; i++){
-                buttonOpen[i].style.display = 'none';
-            }
+        function mobileMenuOpen () {
+            buttonClose.style.display = 'block';
+
+            buttonOpen.style.display = 'none';
+
+            mobileNav.style.display = 'block';
         }
+        function mobileMenuClose () {
+            buttonClose.style.display = 'none';
 
-        function mobileMenuClose(){
-            for (var i=0;i < mobileNav.length; i++){
-                mobileNav[i].style.display = 'none';
-            }
-            for (var i=0;i < buttonClose.length; i++){
-                buttonClose[i].style.display = 'none';
-            }
-            for (var i=0;i < buttonOpen.length; i++){
-                buttonOpen[i].style.display = 'block';
-            }
+            buttonOpen.style.display = 'block';
+
+            mobileNav.style.display = 'none';
         }
 
         // Accordian panels
