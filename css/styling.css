@@ -170,12 +170,12 @@ header {
 }
 
 .content__qualificationsNav p, .content__workNav p{
-    font-size: calc(16px + .3vw);
+    font-size: calc(3px + 1.5vw);
     letter-spacing: .01rem;
 }
 
 .content__qualificationsNav ul li, .content__workNav ul li{
-    font-size: calc(13px + .3vw);
+    font-size: calc(2.5px + 1.5vw);
     letter-spacing: .01rem;
     border-bottom: none;
 }
