@@ -25,20 +25,22 @@
                 <li><a href="./more.html" >more</a></li>
                 <li><a href="./donate.html" >donate</a></li>
             </ul>
-            <h3 class="header__mobile-open">
-                <a href="javascript:void(0);" onclick="mobileMenuOpen()">menu</a>
-            </h3>
-            <div class="header__mobile-menu">
-                <h3 class="header__mobile-close">
-                    <a href="javascript:void(0);" onclick="mobileMenuClose()">close</a>
+            <div class="header__mobile-menu-cont">
+                <h3 class="header__mobile-open">
+                    <a href="javascript:void(0);" onclick="mobileMenuOpen()">menu</a>
                 </h3>
-                <ul class="header__mobile-nav">
-                    <li><a href="./index.html" class="active">home</a></li>
-                    <li><a href="./developement.html" >development</a></li>
-                    <li><a href="./design.html">design</a></li>
-                    <li><a href="./more.html" >more</a></li>
-                    <li><a href="./donate.html" >UKR-donations</a></li>
-                </ul>
+                <div class="header__mobile-menu">
+                    <h3 class="header__mobile-close">
+                        <a href="javascript:void(0);" onclick="mobileMenuClose()">close</a>
+                    </h3>
+                    <ul class="header__mobile-nav">
+                        <li><a href="./index.html" class="active">home</a></li>
+                        <li><a href="./developement.html" >development</a></li>
+                        <li><a href="./design.html">design</a></li>
+                        <li><a href="./more.html" >more</a></li>
+                        <li><a href="./donate.html" >donate</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -223,6 +225,7 @@
         var buttonOpen = document.getElementsByClassName('header__mobile-open')[0];
         var buttonClose = document.getElementsByClassName('header__mobile-close')[0];
         var mobileNav = document.getElementsByClassName('header__mobile-menu')[0];
+        var logo = document.getElementsByClassName('.header__logo')[0];
 
         function mobileMenuOpen () {
             buttonClose.style.display = 'block';
@@ -230,6 +233,8 @@
             buttonOpen.style.display = 'none';
 
             mobileNav.style.display = 'block';
+
+            logo.style.display = 'none';
         }
         function mobileMenuClose () {
             buttonClose.style.display = 'none';

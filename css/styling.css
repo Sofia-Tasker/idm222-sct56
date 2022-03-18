@@ -66,6 +66,7 @@ header {
 
 .header__logo{
     cursor: pointer;
+    display: block;
 }
 
 .header__mobile-open{
@@ -74,6 +75,12 @@ header {
 
 .header__mobile-close{
     display: block;
+}
+
+.header__mobile-nav{
+    list-style: none;
+    width: 100vw;
+    height: 100vh;
 }
 
 .header__mobile-menu{
@@ -87,7 +94,29 @@ header {
     list-style: none;
 }
 
+.header__mobile-menu-cont {
+    display: none;
+    background-color: #32CD32;
+}
+
+.header__mobile-menu-cont .header__mobile-close{
+    padding-left: 45.5vw;
+    font-size: calc(19px + .7vw);
+    font-weight: 300;
+}
+
+.header__mobile-menu-cont .header__mobile-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+}
+
 @media screen and (max-width: 768px){
+    .header__mobile-menu-cont {
+        display: block;
+    }
     .header__mobile-open{
         display: block;
     }
@@ -269,14 +298,12 @@ footer {
     cursor: pointer;
 }
 
+
 .content__developement{
     width: 98%;
     margin: auto;
     display: grid;
     justify-items: center;
-    align-items: center;
-    align-self: center;
-    justify-content: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
@@ -432,19 +459,29 @@ footer {
     grid-area: tutor;
 }
 
-.content__class{
-    width: 70%;
-    margin: auto;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    align-self: center;
+.content__content{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-        'home com'
-        'chat cal'
-        'tutor cal';
-    background-color: #ffffff;
+    flex-wrap: wrap;
+}
+
+.content__BN{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1%;
+}
+
+.content__BN img{
+    max-width: 45vw;
+    object-fit: cover;
+}
+
+.content__content img{
+    max-height: 50vh;
+}
+
+.content__content video{
+    min-width: 50vw;
 }
