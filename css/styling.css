@@ -92,11 +92,17 @@ header {
     flex-direction: row;
     justify-content: space-between;
     list-style: none;
+    position: relative;
 }
 
 .header__mobile-menu-cont {
     display: none;
     background-color: #32CD32;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 2% 3%;
+    z-index: 1;
 }
 
 .header__mobile-menu-cont .header__mobile-close{
@@ -357,7 +363,7 @@ footer {
     grid-area: tiffany;
 }
 
-.content__more div:hover {
+.content__more-jo div:hover {
     opacity: .7;
     cursor: pointer;
 }
