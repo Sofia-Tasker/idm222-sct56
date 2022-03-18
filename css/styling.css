@@ -363,10 +363,10 @@ footer {
     grid-area: tiffany;
 }
 
-.content__more-jo div:hover {
+/* .content__more div:hover {
     opacity: .7;
     cursor: pointer;
-}
+} */
 
 .content__more{
     width: 90%;
